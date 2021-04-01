@@ -1,1 +1,18 @@
 
+1. Write a program to implement the AlexNet model (Note : You can use any publically
+available dataset for testing). While implementing you have to show following things:
+ Display sample input and output images (at least 10 images).
+ Display the total images in the database, size of the image, no of classes in the
+database.
+ Display the first convolution function kernel filter coefficient values
+ Display the training accuracy / training error
+ Display the testing accuracy
+2. Write a program to implement the new CNN model. The model should contains following
+things : (Note : use any grayscale dataset with the 10 classes)
+1. Convolution #1. Input = 32x32x1. Output = 28x28x6 conv2d 
+2. SubSampling #1. Input = 28x28x6. Output = 14x14x6. SubSampling is simply Average Pooling so we use avgpool 
+3. Convolution #2. Input = 14x14x6. Output = 10x10x16 conv2d
+4. SubSampling #2. Input = 10x10x16. Output = 5x5x16 avg_pool 
+5. Fully Connected #1. Input = 5x5x16. Output = 120 
+6. Fully Connected #2. Input = 120. Output = 84 
+7. Output 10 
